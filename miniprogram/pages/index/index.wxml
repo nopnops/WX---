@@ -1,66 +1,57 @@
 <!--index.wxml-->
 <view class="container">
-
-  <!-- 用户 openid -->
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-      size="default"
-    ></button>
-    <view class="userinfo-nickname-wrapper">
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+  <view id="header">
+    <image mode="widthFix"  src="../../images/bg1.jpg" class="bgImg"></image>
+    <text class="headerTitle">关于狮龟的三两事</text>
+  </view>
+  <view id="content">
+    <text class="contentTitle">时光慢慢，我们一起走</text>
+    <view class="list">
+      <view class="list_item">
+        <view class="listItemIcon">
+          <image src="../../images/bg1.jpg" mode="widthFix" class="list_item_img"></image>
+        </view>
+        <view class="listItemText">
+          <text class="listItemTit">我们间线</text>
+          <text class="listItemDesc">我们的时间线</text>
+        </view>
+       
+      </view>
+      <view class="list_item">
+        <view class="listItemIcon">
+          <image src="../../images/bg1.jpg" mode="widthFix" class="list_item_img"></image>
+        </view>
+        <view class="listItemText">
+          <text class="listItemTit">我们间线</text>
+          <text class="listItemDesc">我们的时间线</text>
+        </view>
+       
+      </view>
+      <view class="list_item">
+        <view class="listItemIcon">
+          <image src="../../images/bg1.jpg" mode="widthFix" class="list_item_img"></image>
+        </view>
+        <view class="listItemText">
+          <text class="listItemTit">我们间线</text>
+          <text class="listItemDesc">我们的时间线</text>
+        </view>
+       
+      </view>
+      <view class="list_item">
+        <view class="listItemIcon">
+          <image src="../../images/bg1.jpg" mode="widthFix" class="list_item_img"></image>
+        </view>
+        <view class="listItemText">
+          <text class="listItemTit">我们间线</text>
+          <text class="listItemDesc">我们的时间线</text>
+        </view>
+       
+      </view>
     </view>
+  
+    <show-list></show-list>
+   
   </view>
-
-
-  <!-- 上传图片 -->
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view>
-
-
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
-
-  <!-- 即时通信 -->
-  <view class="uploader">
-    <navigator url="../im/im" open-type="navigate" class="uploader-text">
-      <text>即时通信 Demo</text>
-    </navigator>
-  </view>
-
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
-
-  <!-- 云调用 -->
-  <view class="uploader">
-    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
-      <text>云调用</text>
-    </navigator>
-  </view>
-
-  <!-- 新增例子 -->
-  <view class="uploader">
-     <navigator url="../examplePage/page1" open-type="navigate" class="uploader-text">
-      <text>举个栗子</text>
-    </navigator>
-  </view>
-
-
+  
 </view>
+<nav-bar></nav-bar>

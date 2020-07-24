@@ -1,0 +1,13 @@
+<!--miniprogram/component/list/list.wxml-->
+<view class="onlyList">
+  <view class="showList">
+    <view class="showListImg">
+      <image mode="widthFit" src=""></image>
+    </view>
+    <view class="showListIntroduce">
+      <text class="showListIntroduceTitle">我盟胫骨假关节</text>
+      <text class="showListIntroduceDec">我盟胫骨假关节吧v我盟胫骨节我盟关节</text>
+
+    </view>
+  </view>
+</view>

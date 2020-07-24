@@ -1,0 +1,10 @@
+<!--miniprogram/component/navbar/navbar.wxml-->
+<view class="footNavbar">
+    <view class="navbarList" wx:for="{{tabListJson}}" wx:key="pagePath">
+      <view class="navIcon">
+        <image  mode="aspectFit" src="{{tabIndex === index ? item.selectedIconPath : item.iconPath }}"></image>
+      </view>
+      <text class="navText">{{item.text}}</text>
+    </view>
+  
+</view>

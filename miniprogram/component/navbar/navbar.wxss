@@ -1,0 +1,41 @@
+/* miniprogram/component/navbar/navbar.wxss */
+.footNavbar{
+  width:100%;
+  height:100rpx;
+  background:#323136;
+  position:fixed;
+  bottom:0;
+  left:0;
+  display:flex;
+  border-top: 0.5px solid #d5d5d5;
+}
+.navbarList{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+} 
+.navbarList:nth-child(3){
+  position:relative;
+  bottom:50rpx;
+  flex:0.7;
+}
+.navIcon{
+  border:1px solid #ccc;
+  width:56rpx;
+  height:56rpx;
+ 
+}
+
+.navbarList:nth-child(3) .navIcon{
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+}
+.navText{
+  font-size:28rpx;
+  color:#ccc;
+  margin-top:6rpx;
+  display:block;
+}

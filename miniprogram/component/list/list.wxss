@@ -1,0 +1,39 @@
+/* miniprogram/component/list/list.wxss */
+.onlyList{
+  width:90%;
+  margin:40rpx auto;
+}
+.showList{
+  width:90%;
+  height:250rpx;
+  background:#212121;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  padding:0 5%;
+}
+.showListImg{
+  width: 200rpx;
+  height:200rpx;
+  background:#fff;
+}
+.showListIntroduce{
+  border-left:1px solid #ddd;
+  margin-left:80rpx;
+  padding-left:50rpx;
+  height:170rpx;
+  display: block;
+  padding-top: 30rpx;
+
+}
+.showListIntroduceTitle{
+  color:#fff;
+  font-size:32rpx;
+  line-height:50rpx;
+  display: block;
+}
+.showListIntroduceDec{
+  color:#f04bc7;
+  font-size:24rpx;
+  line-height:48rpx;
+}
